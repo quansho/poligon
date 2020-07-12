@@ -52,3 +52,9 @@ Route::group(['prefix' => 'foundamentals'], function () {
     Route::get('event-channel', 'FoundamentalPatternsController@EventChannel')->name('event.channel');
     Route::get('interface-pattern', 'FoundamentalPatternsController@InterfacePattern')->name('interface');
 });
+
+Route::group(['prefix' => 'creational'], function () {
+    Route::get('abstract-factory', 'CreationalPatternsController@AbstractFactory')->name('abstract.factory');
+});
+
+

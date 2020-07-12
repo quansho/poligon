@@ -19,8 +19,8 @@
                     <div class="pl-2"><a href="{{route('interface')}}">Интерфейс</a></div>
                 </div>
                 <div class="uppercase tracking-wide text-c2 mb-4 mt-8">Пораждающие шаблоны (Creational)</div>
-                <div class="flex cursor-pointer border px-4 py-2 text-lg text-grey-darkest">
-                    <div class="pl-2">Абстрактная фабрика</div>
+                <div class="flex cursor-pointer border px-4 py-2 text-lg text-grey-darkest" style="{{ (request()->is('creational/abstract-factory')) ? 'border-left: 4px solid #0018c2 !important;' : '' }}">
+                    <div class="pl-2"><a href="{{route('abstract.factory')}}">Абстрактная фабрика</a></div>
                 </div>
                 <div class="flex cursor-pointer border px-4 py-2 text-lg text-grey-darkest">
                     <div class="pl-2">Фабричный метод</div>
