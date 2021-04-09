@@ -1,8 +1,8 @@
 <?php
 
-namespace App\DessignPatterns\Foundamental\PropertyContainer;
+namespace App\DesignPatterns\Foundamental\PropertyContainer;
 
-use App\DessignPatterns\Foundamental\PropertyContainer\Interfaces\PropertyContainerInterface;
+use App\DesignPatterns\Foundamental\PropertyContainer\Interfaces\PropertyContainerInterface;
 use stdClass;
 
 class PropertyContainer implements PropertyContainerInterface

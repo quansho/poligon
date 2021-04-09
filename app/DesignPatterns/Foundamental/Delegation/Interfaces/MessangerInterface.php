@@ -1,6 +1,6 @@
 <?php
 
-namespace  App\DessignPatterns\Delegation\Interfaces;
+namespace  App\DesignPatterns\Foundamental\Delegation\Interfaces;
 
 
 interface MessangerInterface

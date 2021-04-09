@@ -1,10 +1,10 @@
 <?php
 
 
-namespace  App\DessignPatterns\Delegation\Messengers;
+namespace  App\DesignPatterns\Foundamental\Delegation\Messengers;
 
 
-class EmailMessenger extends AbstractMessanger
+class EmailMessenger extends AbstractMessenger
 {
 
     public function send(): bool

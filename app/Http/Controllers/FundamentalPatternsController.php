@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\DesignPatterns\Foundamental\EventChannel\EventChannelJob;
-use App\DessignPatterns\Delegation\AppMessenger;
-use App\DessignPatterns\Foundamental\PropertyContainer\BlogPost;
-use App\DessignPatterns\Foundamental\PropertyContainer\PropertyContainer;
+use App\DesignPatterns\Foundamental\Delegation\AppMessenger;
+use App\DesignPatterns\Foundamental\PropertyContainer\BlogPost;
+use App\DesignPatterns\Foundamental\PropertyContainer\PropertyContainer;
 use stdClass;
 
-class FoundamentalPatternsController extends Controller
+class FundamentalPatternsController extends Controller
 {
     public function PropertyContainer(){
         $name = 'Контейнер свойств (Property Container)';

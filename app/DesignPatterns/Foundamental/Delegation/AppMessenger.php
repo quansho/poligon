@@ -1,10 +1,10 @@
 <?php
 
-namespace App\DessignPatterns\Delegation;
+namespace App\DesignPatterns\Foundamental\Delegation;
 
-use App\DessignPatterns\Delegation\Interfaces\MessangerInterface;
-use App\DessignPatterns\Delegation\Messengers\EmailMessenger;
-use App\DessignPatterns\Delegation\Messengers\SmsMessenger;
+use App\DesignPatterns\Foundamental\Delegation\Interfaces\MessangerInterface;
+use App\DesignPatterns\Foundamental\Delegation\Messengers\EmailMessenger;
+use App\DesignPatterns\Foundamental\Delegation\Messengers\SmsMessenger;
 use stdClass;
 
 class AppMessenger implements MessangerInterface

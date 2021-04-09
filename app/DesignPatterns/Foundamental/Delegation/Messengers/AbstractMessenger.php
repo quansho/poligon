@@ -1,10 +1,10 @@
 <?php
 
-namespace App\DessignPatterns\Delegation\Messengers;
+namespace App\DesignPatterns\Foundamental\Delegation\Messengers;
 
-use  App\DessignPatterns\Delegation\Interfaces\MessangerInterface;
+use  App\DesignPatterns\Foundamental\Delegation\Interfaces\MessangerInterface;
 
-abstract class AbstractMessanger implements MessangerInterface
+abstract class AbstractMessenger implements MessangerInterface
 {
 
     private $sender;

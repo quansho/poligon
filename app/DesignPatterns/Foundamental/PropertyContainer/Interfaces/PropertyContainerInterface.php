@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DessignPatterns\Foundamental\PropertyContainer\Interfaces;
+namespace App\DesignPatterns\Foundamental\PropertyContainer\Interfaces;
 
 
 interface PropertyContainerInterface

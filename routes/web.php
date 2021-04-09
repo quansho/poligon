@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+$adminGroup = [
+                'namespace'     => 'admin',
+                'prefix'        => 'admin',
+                'middleware'    => 'is.admin'
+              ];
+
+
 Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
@@ -26,9 +33,7 @@ Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCall
 Route::get('/contact', 'ContactController@index')->name('contact');
 Route::get('/about', 'AboutController@index')->name('about');
 
-$adminGroup = [ 'namespace' => 'admin',
-    'prefix' => 'admin',
-    'middleware' => 'is.admin'];
+
 Route::group($adminGroup, function () {
     $methods = ['index', 'edit', 'store', 'update', 'create', 'destroy'];
 
@@ -47,10 +52,10 @@ Route::group(['namespace' => 'blog',  ], function () {
 
 
 Route::group(['prefix' => 'foundamentals'], function () {
-    Route::get('property-container', 'FoundamentalPatternsController@PropertyContainer')->name('property.container');
-    Route::get('delegation', 'FoundamentalPatternsController@Delegation')->name('delegation');
-    Route::get('event-channel', 'FoundamentalPatternsController@EventChannel')->name('event.channel');
-    Route::get('interface-pattern', 'FoundamentalPatternsController@InterfacePattern')->name('interface');
+    Route::get('property-container', 'FundamentalPatternsController@PropertyContainer')->name('property.container');
+    Route::get('delegation', 'FundamentalPatternsController@Delegation')->name('delegation');
+    Route::get('event-channel', 'FundamentalPatternsController@EventChannel')->name('event.channel');
+    Route::get('interface-pattern', 'FundamentalPatternsController@InterfacePattern')->name('interface');
 });
 
 Route::group(['prefix' => 'creational'], function () {

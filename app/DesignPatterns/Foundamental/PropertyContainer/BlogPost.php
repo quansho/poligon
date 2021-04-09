@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DessignPatterns\Foundamental\PropertyContainer;
+namespace App\DesignPatterns\Foundamental\PropertyContainer;
 
 class BlogPost extends PropertyContainer
 {
